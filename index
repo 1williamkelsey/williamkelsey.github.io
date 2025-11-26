@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="William Kelsey - Delivery Transformation Leader helping healthcare technology companies scale from $150M to $650M+ by transforming delivery performance.">
+    <title>William Kelsey - Delivery Transformation Leader</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #374151;
+            background-color: #ffffff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+
+        h4 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 0.75rem;
+            margin-top: 1.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.125rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .headshot {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero h1 {
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.95;
+        }
+
+        .tagline {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            line-height: 1.8;
+        }
+
+        /* Buttons */
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.125rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background-color: white;
+            color: #1e3a8a;
+        }
+
+        .btn-primary:hover {
+            background-color: #f3f4f6;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-secondary:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+        }
+
+        /* Metrics Section */
+        .metrics {
+            padding: 80px 20px;
+            background-color: #f9fafb;
+        }
+
+        .metric-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+        }
+
+        .metric-card {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .metric-number {
+            font-size: 4rem;
+            font-weight: 700;
+            color: #1e3a8a;
+            margin-bottom: 0.5rem;
+        }
+
+        .metric-label {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+
+        .metric-context {
+            font-size: 1rem;
+            color: #6b7280;
+            line-height: 1.6;
+        }
+
+        /* Case Studies Section */
+        .case-studies {
+            padding: 80px 20px;
+            background-color: white;
+        }
+
+        .case-study {
+            background-color: #f9fafb;
+            border-radius: 12px;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            border-left: 4px solid #1e3a8a;
+        }
+
+        .case-section {
+            margin-bottom: 2rem;
+        }
+
+        .case-study ul {
+            list-style-position: inside;
+            margin-left: 1rem;
+        }
+
+        .case-study li {
+            margin-bottom: 0.75rem;
+            font-size: 1.125rem;
+            line-height: 1.6;
+        }
+
+        .case-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 2rem;
+        }
+
+        .tag {
+            background-color: #dbeafe;
+            color: #1e40af;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 80px 20px;
+            background-color: #f9fafb;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-card h3 {
+            color: #1e3a8a;
+            margin-bottom: 1rem;
+        }
+
+        /* Experience Section */
+        .experience {
+            padding: 80px 20px;
+            background-color: white;
+        }
+
+        .timeline {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .timeline-item {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            gap: 2rem;
+            margin-bottom: 3rem;
+            padding-bottom: 3rem;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .timeline-item:last-child {
+            border-bottom: none;
+        }
+
+        .timeline-date {
+            font-weight: 600;
+            color: #1e3a8a;
+            font-size: 1.125rem;
+        }
+
+        .timeline-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .timeline-content h4 {
+            font-size: 1.125rem;
+            color: #6b7280;
+            font-weight: 500;
+            font-style: italic;
+            margin-bottom: 1rem;
+            margin-top: 0;
+        }
+
+        /* Credentials Section */
+        .credentials {
+            padding: 80px 20px;
+            background-color: #f9fafb;
+        }
+
+        .credential-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .credential-card {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .credential-card h3 {
+            color: #1e3a8a;
+            margin-bottom: 1.5rem;
+        }
+
+        .credential-card ul {
+            list-style-position: inside;
+        }
+
+        .credential-card li {
+            margin-bottom: 1rem;
+            font-size: 1.125rem;
+            line-height: 1.6;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 80px 20px;
+            background-color: white;
+            text-align: center;
+        }
+
+        .contact-tagline {
+            font-size: 1.25rem;
+            color: #6b7280;
+            margin-bottom: 2rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contact-info {
+            margin-bottom: 2rem;
+        }
+
+        .contact-info p {
+            font-size: 1.125rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info a {
+            color: #1e3a8a;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1f2937;
+            color: white;
+            padding: 2rem 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.875rem;
+            opacity: 0.8;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.75rem;
+            }
+            
+            h3 {
+                font-size: 1.5rem;
+            }
+            
+            .hero {
+                padding: 60px 20px;
+            }
+            
+            .subtitle {
+                font-size: 1.25rem;
+            }
+            
+            .tagline {
+                font-size: 1.125rem;
+            }
+            
+            .metric-number {
+                font-size: 3rem;
+            }
+            
+            .case-study {
+                padding: 1.5rem;
+            }
+            
+            .timeline-item {
+                grid-template-columns: 1fr;
+                gap: 0.5rem;
+            }
+            
+            .timeline-date {
+                font-size: 1rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <!-- Placeholder for headshot - you'll add this later -->
+                <!-- <img src="headshot.jpg" alt="William Kelsey" class="headshot"> -->
+                
+                <h1>William Kelsey</h1>
+                <p class="subtitle">Delivery Transformation Leader | Enterprise Product Operations</p>
+                <p class="tagline">I help healthcare technology companies scale from $150M to $650M+ by transforming delivery performance from 70% to 90%+ predictability.</p>
+                
+                <div class="cta-buttons">
+                    <a href="#case-studies" class="btn btn-primary">View Case Studies</a>
+                    <a href="https://www.linkedin.com/in/william-kelsey-5265ab3/" class="btn btn-secondary" target="_blank">LinkedIn</a>
+                    <a href="mailto:william.kelsey@gmail.com" class="btn btn-secondary">Email Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metrics Section -->
+    <section class="metrics">
+        <div class="container">
+            <div class="metric-grid">
+                <div class="metric-card">
+                    <div class="metric-number">$650M</div>
+                    <div class="metric-label">ARR Platform</div>
+                    <p class="metric-context">Led product teams owning automated claims platform generating $650M in annual recurring revenue</p>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-number">1.5B+</div>
+                    <div class="metric-label">Transactions Annually</div>
+                    <p class="metric-context">Scaled processing from 350M to 1.5B+ transactions while maintaining HIPAA/HITRUST compliance</p>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-number">90%</div>
+                    <div class="metric-label">On-Time Delivery</div>
+                    <p class="metric-context">Transformed delivery predictability from 70% to 90% (vs. 30-50% industry baseline)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section id="case-studies" class="case-studies">
+        <div class="container">
+            <h2>Case Studies</h2>
+            
+            <!-- Case Study 1 -->
+            <div class="case-study">
+                <h3>Scaled Healthcare Claims Platform 400%</h3>
+                
+                <div class="case-section">
+                    <h4>The Challenge</h4>
+                    <p>Automated claims processing platform needed to scale from 350M to 1.5B+ transactions annually while maintaining HIPAA/HITRUST compliance and growing revenue from $150M to $650M. Legacy waterfall delivery created bottlenecks and unpredictability.</p>
+                </div>
+                
+                <div class="case-section">
+                    <h4>My Approach</h4>
+                    <ul>
+                        <li>Transformed delivery across 14 programs from waterfall to SAFe, Scrum, and Kanban frameworks</li>
+                        <li>Established quarterly PI Planning and portfolio governance in partnership with C-suite leaders</li>
+                        <li>Introduced DevSecOps, CI/CD pipelines, and automated testing increasing deployment frequency 200%</li>
+                        <li>Built Centers of Excellence for governance, tooling, and continuous improvement across 1,000+ IT staff</li>
+                    </ul>
+                </div>
+                
+                <div class="case-section">
+                    <h4>The Outcomes</h4>
+                    <ul>
+                        <li>Scaled platform from 350M to 1.5B+ transactions annually (428% growth)</li>
+                        <li>Improved on-time delivery from 70% to 90% (2-3x better than industry baseline)</li>
+                        <li>Grew platform revenue from $150M to $650M ARR</li>
+                        <li>Reduced late-stage defects 70% and technical debt 60%</li>
+                        <li>Increased team productivity 20%, contributed to Net Promoter Score of 73</li>
+                    </ul>
+                </div>
+                
+                <div class="case-tags">
+                    <span class="tag">SAFe</span>
+                    <span class="tag">Scrum</span>
+                    <span class="tag">Kanban</span>
+                    <span class="tag">Azure</span>
+                    <span class="tag">Databricks</span>
+                    <span class="tag">HIPAA/HITRUST</span>
+                </div>
+            </div>
+            
+            <!-- Case Study 2 -->
+            <div class="case-study">
+                <h3>AI/ML Product Innovation - Award-Winning</h3>
+                
+                <div class="case-section">
+                    <h4>The Challenge</h4>
+                    <p>Healthcare payers needed intelligent pricing solutions to optimize claim negotiations and improve cost savings predictions. Required breakthrough approach combining analytics, automation, and regulatory compliance.</p>
+                </div>
+                
+                <div class="case-section">
+                    <h4>My Approach</h4>
+                    <ul>
+                        <li>Led product discovery through launch for Dynamic Negotiation Offer (AI/ML-powered pricing)</li>
+                        <li>Migrated ML training to Azure/Databricks achieving 4x faster model training cycles</li>
+                        <li>Built platform infrastructure enabling 3 product launches: Dynamic Negotiation → PlanOptix → BenInsights</li>
+                        <li>Partnered with operations, finance, compliance, and data science teams on value realization</li>
+                    </ul>
+                </div>
+                
+                <div class="case-section">
+                    <h4>The Outcomes</h4>
+                    <ul>
+                        <li>Launched award-winning AI/ML product earning CIO 100 Award (2022) and MedTech Breakthrough Award (2023)</li>
+                        <li>Generated new revenue streams and operational cost savings for healthcare payers</li>
+                        <li>Improved financial forecasting accuracy through predictive analytics</li>
+                        <li>Created reusable platform infrastructure enabling 2 additional products</li>
+                        <li>Maintained 100% HIPAA/HITRUST/SOX compliance throughout</li>
+                    </ul>
+                </div>
+                
+                <div class="case-tags">
+                    <span class="tag">Azure</span>
+                    <span class="tag">Databricks</span>
+                    <span class="tag">.NET</span>
+                    <span class="tag">ML/AI</span>
+                    <span class="tag">Healthcare Analytics</span>
+                </div>
+            </div>
+            
+            <!-- Case Study 3 -->
+            <div class="case-study">
+                <h3>M&A Integration at Scale</h3>
+                
+                <div class="case-section">
+                    <h4>The Challenge</h4>
+                    <p>Led integration of 4 acquisitions, merging teams, systems, and delivery models while maintaining compliance and scaling acquired products 10x in revenue.</p>
+                </div>
+                
+                <div class="case-section">
+                    <h4>My Approach</h4>
+                    <ul>
+                        <li>Unified disparate delivery models into cohesive Agile frameworks (SAFe, Scrum, Kanban)</li>
+                        <li>Established shared governance, tooling standards, and compliance controls across merged organizations</li>
+                        <li>Merged teams and product portfolios while retaining key talent through transparent communication</li>
+                        <li>Embedded HIPAA, HITRUST, and SOX compliance into integrated delivery processes</li>
+                    </ul>
+                </div>
+                
+                <div class="case-section">
+                    <h4>The Outcomes</h4>
+                    <ul>
+                        <li>Successfully integrated 4 acquisitions with 10x revenue growth on acquired products</li>
+                        <li>Maintained 97% staff retention during transitions through clear roadmaps and support</li>
+                        <li>Achieved full regulatory compliance (HIPAA, HITRUST, SOX) across all integrated systems</li>
+                        <li>Reduced integration timeline by standardizing playbooks and change management processes</li>
+                    </ul>
+                </div>
+                
+                <div class="case-tags">
+                    <span class="tag">M&A Integration</span>
+                    <span class="tag">SAFe</span>
+                    <span class="tag">Change Management</span>
+                    <span class="tag">Compliance</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <h2>What I Do</h2>
+            
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3>Delivery Transformation</h3>
+                    <p>Scale Agile practices from teams to enterprise. Implement SAFe, Scrum@Scale, and hybrid models that improve predictability, velocity, and time-to-market.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Product Operations</h3>
+                    <p>Build portfolio governance, planning rhythms, and operational excellence. Connect strategy to execution through clear metrics, accountability frameworks, and cross-functional alignment.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Organizational Change</h3>
+                    <p>Develop talent pipelines, Centers of Excellence, and coaching programs. Embed continuous improvement culture that scales beyond consulting engagements.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>AI/ML Product Leadership</h3>
+                    <p>Guide discovery, build, and launch of analytics-driven products in regulated environments. Balance innovation with compliance requirements (HIPAA, HITRUST, SOX).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience">
+        <div class="container">
+            <h2>Career Highlights</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2012-2024</div>
+                    <div class="timeline-content">
+                        <h3>Claritev (formerly MultiPlan)</h3>
+                        <h4>Director of Technical Product Planning</h4>
+                        <p>Promoted 5 times over 12 years. Led teams owning $650M ARR platform processing 1.5B+ transactions annually. Managed 15-17 direct reports including Product Owners, Business Analysts, Program Managers, Scrum Masters, and Agile Coaches.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2009-2012</div>
+                    <div class="timeline-content">
+                        <h3>Independent Consultant</h3>
+                        <h4>Technology Product Partner</h4>
+                        <p>Led engagements across healthcare, finance, and government sectors. Secured 6 SOW extensions tripling engagement revenue. Transitioned organizations from waterfall to Agile frameworks.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2007-2009</div>
+                    <div class="timeline-content">
+                        <h3>Mount Sinai Hospital</h3>
+                        <h4>Program/Project Manager</h4>
+                        <p>Digital transformation projects for clinical documentation and training. Led AI-assisted dictation implementation and global media launches.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Credentials Section -->
+    <section class="credentials">
+        <div class="container">
+            <h2>Certifications & Recognition</h2>
+            
+            <div class="credential-grid">
+                <div class="credential-card">
+                    <h3>Certifications</h3>
+                    <ul>
+                        <li>SAFe Certified Release Train Engineer (Scaled Agile)</li>
+                        <li>Certified ScrumMaster (Scrum.org)</li>
+                        <li>Project Management Certification (Mount Sinai School of Medicine)</li>
+                    </ul>
+                </div>
+                
+                <div class="credential-card">
+                    <h3>Awards</h3>
+                    <ul>
+                        <li>CIO 100 Award (2022) - AI/ML healthcare innovation</li>
+                        <li>MedTech Breakthrough Award (2023) - Product excellence</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <h2>Let's Talk About Your Delivery Challenges</h2>
+            <p class="contact-tagline">Whether you're scaling a healthcare platform, transforming enterprise delivery, or navigating complex M&A integrations - I can help.</p>
+            
+            <div class="contact-info">
+                <p><strong>Email:</strong> william.kelsey@gmail.com</p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/william-kelsey-5265ab3/" target="_blank">linkedin.com/in/william-kelsey-5265ab3</a></p>
+            </div>
+            
+            <div class="cta-buttons">
+                <a href="mailto:william.kelsey@gmail.com" class="btn btn-primary">Send Email</a>
+                <a href="https://www.linkedin.com/in/william-kelsey-5265ab3/" class="btn btn-secondary" target="_blank">Connect on LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 William Kelsey. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
